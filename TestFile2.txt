@@ -1,0 +1,27 @@
+
+user 1
+ git init
+ git config --global user.name "Adel Assi"
+ git config --global user.email "adelassi@hotmail.com"
+git remote add origin https://github.com/adelassi/TestingRepository1
+git commit -m "First upload"
+git push -u origin master
+git log
+
+user 2 
+git clone https://github.com/adelassi/TestingRepository1
+git add .
+git commit -m "Fixing bugs"
+
+
+update to user 1
+git pull origin master
+
+
+create new branch (changes of other user, later will merge)
+git checkout -b myNewBranch
+git commit -m "Fixing bugs"
+git push -u origin myNewBranch
+
+for untracked files
+git add test.txt
